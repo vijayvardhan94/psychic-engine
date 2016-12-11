@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MOAWL Project</title><br>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div align = "center">
+      <%= link_to root_path do %>
+        <%= image_tag "kcc.jpg" %>
+      <% end %>
+    </div>
+    <div align= "center">
+  	<u><h1 align= "center"> moawl-project. </h1></u> <h4 align= "center"> about </h1>
+<br>
+       
+
+  	
+        <h2 align="center"> Mother of all word lists is a consolidated word list from Barrons, ETS, Manhattan that contains meanings from answer options</h2>
+         
+      <h2 align ="center"> moawl contains words from the articles of The New Yorker, The New York Times </h2>
+  
+    </div>
+  
+<div align ="center">
+  	<%=  link_to "Home", root_path %>
+  	<%=  link_to "Add New Word", new_post_path %>
+    <%= yield %>
+</div>
+  </body>
+  <br>
+   
+   <br>
+   <hr>
+ <div align= "center">
+  <footer>
+  	<h3>copyright &copy; 2016 moawl.</h3>
+    <h4>More words, Score more</h4>
+  </footer>
+</div>
+
+
+</html>

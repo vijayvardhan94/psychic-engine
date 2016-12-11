@@ -1,0 +1,12 @@
+<h1><%= @post.title %></h1>
+<div>
+	<b>meaning:</b> <%= @post.body %> <br>
+
+	<b>sentence:</b> <%= @post.sentence %>
+</div>
+<br>
+<%= link_to "Edit word's meaning or sentence", edit_post_path(@post) %> <br>
+
+<!--<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Delete?" } %>-->
+<!--removed delete functionality to prevent screwups-->
+
